@@ -54,6 +54,8 @@ today = datetime.now().strftime("%d-%m-%Y")
 
 # define the report name with today's date
 report_csv = f"report_{today}.csv"
+
+# export as csv
 report.to_csv(report_csv, index=False)
 print(f"Reconciliation report saved as {report_csv}")
 
